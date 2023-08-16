@@ -1,0 +1,19 @@
+# Default values for netcandystore.
+
+ssh:
+  username: "administrator"
+
+netcandy:
+  image: "quay.io/donschenck/netcandystore:2021mar8.1"
+  dbpassword: "reallylongpassword99!"
+  dbstorage: "8Gi"
+  dbimage: "mcr.microsoft.com/mssql/rhel/server:2019-CU1-rhel-8"
+
+frontend:
+  replicas: 1
+
+backend:
+  replicas: 1
+
+route:
+  enabled: true
